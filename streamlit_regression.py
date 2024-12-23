@@ -62,7 +62,7 @@ prediction_salary = prediction[0][0]
 
 st.write(f"Predicted Estimated Salary, ${prediction_salary}")
 
-if prediction_prob > 0.5:
+if prediction_salary > 0.5:
   st.write('The Customer is likely to churn')
 else:
   st.write('The customer is not likely to churn')
