@@ -6,16 +6,16 @@ import pandas as pd
 import pickle
 
 ## Load the trained model 
-model = tf.keras.models.load_model('52_end_to_end_dl_project\model.h5')
+model = tf.keras.models.load_model('model.h5')
 
 # load the encoders and scaler 
-with open('52_end_to_end_dl_project\label_encoder_gender.pkl', 'rb') as file:
+with open('label_encoder_gender.pkl', 'rb') as file:
   label_encoder_gender = pickle.load(file)
 
-with open('52_end_to_end_dl_project\onehot_encoder_geo.pkl','rb') as file:
+with open('onehot_encoder_geo.pkl','rb') as file:
   onehot_encoder_geo = pickle.load(file)
 
-with open('52_end_to_end_dl_project\scaler.pkl', 'rb') as file:
+with open('scaler.pkl', 'rb') as file:
    scaler = pickle.load(file)
 
 ## Sreamlit app
